@@ -17,6 +17,7 @@
 export default class D20Roll extends Roll {
   constructor(formula, data, options) {
     super(formula, data, options);
+    console.log("oiooio");
   }
 
   static fromRoll(roll) {

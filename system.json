@@ -2,14 +2,22 @@
     "id": "ordemfoundry",
     "title": "Sobrevivendo ao horror",
     "description": "A description of your system.",
-    "version": "0.0.4",
+    "version": "0.0.8",
     "authors": [{"name": "Geovanni"}],
     "compatibility": {
-        "minimum": "12.329",
-        "verified": "12"
+      "minimum": "12.329",
+      "verified": "12"
     },
     "scripts": [],
-    "esmodules": [],
+    "esmodules": [
+      "ordem-foundry.mjs"
+    ],
     "styles": [],
-    "packs": []
+    "packs": [],
+    "flags": {
+      "hotReload": {
+        "extensions": ["css", "json"],
+        "paths": ["templates", "lang"]
+      }
+    }
   }
