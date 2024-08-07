@@ -10,7 +10,7 @@
     },
     "scripts": [],
     "esmodules": [
-      "ordem-foundry.mjs"
+      "./module/ordem-foundry.mjs"
     ],
     "styles": [],
     "packs": [],
