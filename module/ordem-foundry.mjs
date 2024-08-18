@@ -59,3 +59,8 @@ Hooks.once("init", function () {
 
   // return preloadHandlebarsTemplates();
 });
+
+Handlebars.registerHelper("actorFunction", function (value, options) {
+  console.log(value);
+  console.log("actorFunction");
+});

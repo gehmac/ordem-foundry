@@ -68,7 +68,7 @@ export default class ActorBaseModel extends BaseModel {
         initial: 0,
       }),
     });
-    schema.desloc = new fields.SchemaField({
+    schema.dislocation = new fields.SchemaField({
       value: new fields.NumberField({
         ...requiredInteger,
         initial: 0,

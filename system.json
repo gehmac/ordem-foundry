@@ -5,8 +5,8 @@
     "version": "0.0.8",
     "authors": [{"name": "Geovanni"}],
     "compatibility": {
-      "minimum": "12.329",
-      "verified": "12"
+      "minimum": "12.331",
+      "verified": "12.331"
     },
     "scripts": [],
     "esmodules": [

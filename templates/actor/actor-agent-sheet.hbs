@@ -1,7 +1,93 @@
 <form class="{{cssClass}} {{actor.type}} agent" autocomplete="off">
   <header class="sheet-header">
-    <h1 class="charname">
-      <input name="name" type="text" value="{{actor.name}}" placeholder="Name" />
-    </h1>
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64" />
+    <input name="name" type="text" value="{{actor.name}}" placeholder="Name" />
+  {{actorFunction system}}
+    <div class="">
+      <label for="system.NEX.value" class="">NEX</label>
+      <div class="">
+        {{system.NEX.value}}
+      </div>
+    </div>
+
+    <div class="">
+      <label for="system.XP.value" class="">XP</label>
+      <div class="">
+        {{system.XP.value}}
+      </div>
+    </div>
   </header>
+
+  {{!-- class --}}
+  <div>
+    <div class="">
+      <label for="system.class.value" class="">Classe</label>
+      <div class="">
+        {{system.classe}}
+      </div>
+    </div>
+    <div class="">
+      <label for="system.origin.value" class="">Origem</label>
+      <div class="">
+        {{system.origin}}
+      </div>
+    </div>
+    <div class="">
+      <label for="system.path.value" class="">Trilha</label>
+      <div class="">
+        {{system.path}}
+      </div>
+    </div>
+  </div>
+  {{!-- status --}}
+  <div>
+    <div class="">
+      <label for="system.PV.value" class="">PV</label>
+      <div class="">
+        {{system.PV.value}}/{{system.PV.max}}
+      </div>
+    </div>
+    <div class="">
+      <label for="system.SAN.value" class="">SAN</label>
+      <div class="">
+        {{system.SAN.value}}/{{system.SAN.max}}
+      </div>
+    </div>
+    <div class="">
+      <label for="system.PE.value" class="">PE</label>
+      <div class="">
+        {{system.PE.value}}/{{system.PE.max}}
+      </div>
+    </div>
+  </div>
+  {{!-- atributes --}}
+  <div>
+    <div class="">
+      <label for="system.dodge.value" class="">Esquiva</label>
+      <div class="">
+        {{system.dodge.value}}/{{system.dodge.bonus}}
+      </div>
+    </div>
+  </div>
+  {{!-- reactions --}}
+  <div>
+    <div class="">
+      <label for="system.dodge.value" class="">Esquiva</label>
+      <div class="">
+        {{system.dodge.value}}/{{system.dodge.bonus}}
+      </div>
+    </div>
+    <div class="">
+      <label for="system.defense.value" class="">Defesa</label>
+      <div class="">
+        {{system.defense.value}}/{{system.defense.bonus}}
+      </div>
+    </div>
+    <div class="">
+      <label for="system.dislocation.value" class="">Deslocamento</label>
+      <div class="">
+        {{system.dislocation.value}}/{{system.dislocation.bonus}}
+      </div>
+    </div>
+  </div>
 </form>
